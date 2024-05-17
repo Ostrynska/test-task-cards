@@ -1,0 +1,80 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    max-width: 424px;
+    height: 527px;
+    padding: 22px;
+
+    border-radius: 4px;
+    border: 2px solid;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description {
+    width: 376px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.title {
+    margin-bottom: 24px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--title);
+}
+
+.item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.link {
+    text-align: end;
+    text-decoration: underline;
+    text-decoration-color: var(--text);
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.list {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: end;
+    margin-top: auto;
+    text-align: end;
+    text-decoration: underline;
+    text-decoration-color: var(--text);
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+}
