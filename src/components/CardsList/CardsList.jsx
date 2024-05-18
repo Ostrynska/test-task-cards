@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Card from '../Card/Card';
 
@@ -16,6 +17,17 @@ const CardsList = ({ cards }) => {
       ))}
     </ul>
   );
+};
+
+CardsList.propTypes = {
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.arrayOf(PropTypes.string).isRequired,
+      link: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default CardsList;
